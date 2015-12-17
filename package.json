@@ -1,0 +1,24 @@
+{
+  "name": "xbrl-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "co": "^4.6.0",
+    "nightmare": "https://github.com/rosshinkley/nightmare#8069b09966b714b267bf32cb3f3c00398d696845"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcandillon/xbrl-crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wcandillon/xbrl-crawler/issues"
+  },
+  "homepage": "https://github.com/wcandillon/xbrl-crawler#readme"
+}
