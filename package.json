@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "co": "^4.6.0",
-    "nightmare": "https://github.com/rosshinkley/nightmare#8069b09966b714b267bf32cb3f3c00398d696845"
+    "nightmare": "https://github.com/rosshinkley/nightmare#efae7e74b909667c3859eec9a9e7d19919698606"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

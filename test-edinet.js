@@ -5,9 +5,9 @@ var co = require('co');
 
 var nightmare = Nightmare({show: false});
 nightmare.on('download', (e, item) => {
-    if (e === "updated") {
+    if (e === "started") {
         console.log(item.url);
-        nightmare.emit('download', 'cancel', item);
+        nightmare.emit('download', 'continue', item);
     }
 });
 
@@ -26,10 +26,10 @@ co(function*() {
 
     for(let i=0; i<links.length; i++) {
         let link = links[i];
-        yield nightmare.click('a[onclick="' + link +'"]');
+        yield nightmare.click('a[onclick="' + link +'"]').wait('downloads-complete');
     }
 
-    return nightmare.wait('downloads-complete').end();
+    return nightmare.end();
 }).catch(function (err) {
     console.error(err);
 });
